@@ -3,10 +3,10 @@
 *  only last four characters of your card
 */
 
-function hashCard($cardNumber){
+function hashCard($cardNumber, $numChars = 4){
 	$cardNUM = $cardNumber;
-	$numKeep = substr($cardNUM, -4);
-	$cardLen = strlen(substr($cardNUM, 0, -4));
+	$numKeep = substr($cardNUM, -($numChars));
+	$cardLen = strlen(substr($cardNUM, 0, -($numChars)));
 
 	$hashedCard = "";
 	for ($i=1; $i < $cardLen; $i++) { 
