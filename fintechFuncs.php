@@ -1,6 +1,8 @@
 /* This function will help you hash or hide all 
 *  characters of your card numbers and keep 
 *  only last four characters of your card
+*  @param {string} cardNumber - This is the Card Number/string to be hashed, 
+*  @param {integer} numChars - This is the number of characters to keep unhashed
 */
 
 function hashCard($cardNumber, $numChars = 4){
