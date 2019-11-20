@@ -1,4 +1,4 @@
-/* This function will help you hash all 
+/* This function will help you hash or hide all 
 *  characters of your card numbers and keep 
 *  only last four characters of your card
 */
