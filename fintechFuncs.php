@@ -17,3 +17,6 @@ function hashCard($cardNumber){
 	return $cardVal;
 }
 
+// test with this
+echo hashCard("459199292029292929");
+				
