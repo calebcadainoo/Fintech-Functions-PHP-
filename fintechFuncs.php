@@ -22,3 +22,15 @@ function hashCard($cardNumber, $numChars = 4){
 // test with this
 echo hashCard("459199292029292929");
 				
+// count number of lines in file in PHP
+function countNumberOfLines($file){
+	$linecount = 0;
+	$handle = fopen($file, "r");
+	while(!feof($handle)){
+	  $line = fgets($handle);
+	  $linecount++;
+	}
+	fclose($handle);
+
+	return $linecount;
+}
